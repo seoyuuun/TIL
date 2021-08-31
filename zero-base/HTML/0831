@@ -50,6 +50,7 @@ Today,
  - <style>과 동일하게 head 안에 script를 이용해 js 코드를 입력할 수 있으나 외부 문서로 따로 작성 권장
  - <script> 태그를 만나는 순간 해석을 우선한다. 때문에 script 태그는 body 하단에 작성하는 것을 추천한다.
  
+ --next--
  
 [2] 구조를 나타내는 요소
 1. 컨테이너 div, span
