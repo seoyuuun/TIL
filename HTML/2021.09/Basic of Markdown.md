@@ -55,6 +55,7 @@ if{}
 else{}
 ```
 <!--이미지 가운데 정렬-->
+Now, I can line up the image in the mibble!
 ```
 <p align="center">
   <img src="url" alt="text" width="number" />
