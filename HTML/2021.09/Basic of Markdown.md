@@ -54,3 +54,9 @@ To print message in the console, use `console.log('yes')` and..
 if{}
 else{}
 ```
+<!--이미지 가운데 정렬-->
+```
+<p align="center">
+  <img src="url" alt="text" width="number" />
+</p>
+```
