@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html연습 & CSS 예습</title>
+    <style>
+      #first h1 {
+        color: violet;
+      }
+      .green {
+        color: green;
+      }
+
+      #second h1 {
+        color: deeppink;
+      }
+
+      .big {
+        font-size: 1.5em;
+      }
+
+      .a {
+        margin: 0;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple;
+        margin: 5px;
+        display: inline-block;
+      }
+
+      table {
+        width: 600px;
+      }
+
+      li {
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        border: 3px solid orange;
+        border-radius: 35px;
+        cursor: pointer;
+      }
+      b {
+        display: inline-block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="a">안녕</p>
+
+    <div>
+      <span class="a">안녕하세요</span>
+    </div>
+
+    <div id="first">
+      <h1>단락입니다</h1>
+      <p>
+        <span class="big">청</span>춘 노래하며 피가 아니더면, 끝까지 꽃 장식하는
+        무한한 듣는다. 용기가 사람은 돋고, 힘있다.
+        <span class="green">봄바람</span>을 설레는 보이는 같은 가치를 것은 운다.
+        끓는 풍부하게 얼마나 맺어, 찾아 청춘의 뿐이다. 착목한는 불어 이상이
+        교향악이다. 귀는 구할 우리의 그들은 오직 이것이야말로 위하여서, 것이다.
+        영락과 이상, 창공에 풍부하게 위하여서, 설레는 힘차게 피가 것이다.
+        위하여서 이것을 커다란 이 불어 인간의 그와 품에 아름다우냐? 않는 우리
+        인생의 뜨고, 커다란 희망의 것이 위하여 얼마나 뿐이다.
+      </p>
+    </div>
+
+    <div id="second">
+      <h1>2단락</h1>
+      <p>
+        <span class="big">싶</span>이 봄날의 풀밭에 이것이다. 얼마나 뭇 인류의
+        대중을 타오르고 피고 피다. 것은 투명하되 긴지라 그림자는 대한
+        그리하였는가? 가진 같이 쓸쓸한 이 피다. 우리는 인생의 때까지 못하다
+        청춘을 이상의 것이다. 있는 이것을 어디 찾아다녀도, 그들은 설산에서 주며,
+        것이다. 끝까지 자신과 창공에 칼이다. 청춘에서만 품으며, 옷을 동산에는
+        꽃이 설산에서 피다. 넣는 피가 청춘이 원대하고, 끓는 그들은 속에 현저하게
+        못할 이것이다.
+      </p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">이동1</a></li>
+        <li><a href="#">이동2</a></li>
+        <li><a href="#">이동3</a></li>
+        <li><a href="#">이동4</a></li>
+      </ul>
+    </nav>
+    <!--table 연습해보기-->
+    <table>
+      <tr>
+        <td>1 1</td>
+        <td>1 2</td>
+        <td>1 3</td>
+        <td>1 4</td>
+        <td>1 5</td>
+      </tr>
+      <tr>
+        <td>2 1</td>
+        <td>2 2</td>
+        <td>2 3</td>
+        <td>2 4</td>
+        <td>2 5</td>
+      </tr>
+      <tr>
+        <td>3 1</td>
+        <td>3 2</td>
+        <td>3 3</td>
+        <td>3 4</td>
+        <td>3 5</td>
+      </tr>
+    </table>
+    <!-- 서버로 전송할 사용자 입력 영역 : form
+        form-button이 있고 그 번트을 클릭하면 서버로 정보 전달
+    -->
+
+    <!-- action : 사용자 입력을 처리할 백엔드 프로그램에 전송
+    
+        get -> 서버의 정보 변경이 없다 -> 보안 중요성 낮음. 즐겨찾기
+        post -> 서버의 정보가 변경된다 -> 권한 확인 필요
+    -->
+    <form action="002.html" method="get">
+      <input type="text" value="aaaa" />
+      <input type="password" value="1111" />
+      <input type="button" value="로그인" />
+    </form>
+  </body>
+</html>
