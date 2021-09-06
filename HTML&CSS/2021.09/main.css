@@ -1,0 +1,18 @@
+/* type selector */
+h2 {
+  color : purple;
+}
+
+/* id selector */
+#welcome-title {
+  color : red;
+}
+
+/* class selector */
+.blue {
+  color : blue;
+}
+
+.big {
+  font-size: large;
+}
