@@ -1,0 +1,44 @@
+/* 
+범용 선택자
+  (Universal Selector) 
+*/
+
+/* * {
+  color : rgb(145, 65, 65)
+} */
+
+/*
+  상속 제어하기 
+    - initial, inherit, unset
+*/
+
+div {
+  border: 1px solid silver;
+  margin: 2px;
+}
+/* 
+.parent {
+  color: rgb(89, 186, 152);
+}
+
+.child2 {
+  color: initial;
+} */
+
+.child1 {
+  color: rgb(79, 152, 147);
+}
+
+.parent1, .parent2 {
+  color: burlywood;
+}
+
+.parent2 * {
+  color: inherit;
+}
+
+/* 
+unset
+1. 부모로부터 상속받을 값이 있을 때 : inherit
+2. 부모로부터 상속받을 값이 없을 때 : initial 
+*/
