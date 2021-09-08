@@ -1,4 +1,59 @@
-/* :enabled, :disabled, :checked */
-input[type=text] {
+/* enabled, disabled, checked */
+input[type=text]:enabled {
   background-color: beige;
 }
+
+input[type=text]:disabled {
+  background-color: darkcyan;
+}
+
+input[type=radio]:checked {
+  outline: 2px solid brown;
+}
+
+/*
+이전까지..
+Pseudo-Class Selector(가상 클래스 선택자)
+-> selector:_____
+
+Pseudo-Element Selector(가상 요소 선택자)
+-> selector::______
+-> selector:_____
+
+CSS3부터 가상 클래스 선택자와 가상 요소 선택자의 구분을 위해 
+각자 다른 형태로 작성하는 것을 권장한다.
+*/
+
+
+/*-------------------------------------*/
+
+
+/* 
+Pseudo-Element Selector
+(가상 요소 선택자)
+*/
+
+/* before, after */
+.movie::before {
+  content: 'Movie ';
+  color :indianred;
+}
+
+/* first-letter, first-line, selection */
+.lorem::first-letter {
+  color : red;
+  font-size: large;
+}
+
+.lorem::before {
+ content:'Before';
+}
+
+.lorem::first-line {
+  color: rgb(42, 182, 182);
+ }
+
+ .lorem::selection {
+  color: white;
+  background-color: aquamarine;
+ }
