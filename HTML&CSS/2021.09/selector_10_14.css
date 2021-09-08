@@ -57,3 +57,40 @@ Pseudo-Element Selector
   color: white;
   background-color: aquamarine;
  }
+
+ /*
+ Selector Combinators
+  (선택자 결함)
+ */
+
+ /* 하위, 자식, 형제 선택자, 그룹화 */
+
+/* 하위 선택자 :
+앞쪽에 있는 선택자로 범위를 좁혀 선택자에 스타일을 적용
+이의 경우, 스타일이 예상과 달리 다른 요소에도 적용될 수 있다. */
+ ul li:last-of-type {
+   color: rgb(79, 79, 221);
+   font-weight: bold;
+ }
+
+ /* 자식 선택자 :
+ 앞쪽에 있는 선택자의 바로 하위 선택자에 스타일 적용 */
+ #List > li:last-of-type {
+  color: rgb(243, 137, 95);
+}
+
+/* 형제 선택자*/
+/* 1. 일반 형제 선택자 결합 */
+code ~ p {
+  color: aqua;
+}
+
+/* 2. 인접 형제 선택자 결합 */
+code + p {
+  color: blueviolet;
+}
+
+/* 그룹화 */
+p, span {
+  color: puple;
+}
