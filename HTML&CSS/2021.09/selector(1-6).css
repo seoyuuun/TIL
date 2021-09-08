@@ -1,0 +1,92 @@
+/* type selector */
+h1 {
+  color : plum;
+}
+
+h2 {
+  color : purple;
+}
+
+
+/* id selector */
+#welcome-title {
+  color : red;
+}
+
+/* class selector */
+.blue {
+  color : plum;
+}
+
+.big {
+  font-size: large;
+}
+
+
+/* Attribution selector
+(속성 선택자) */
+
+/* 1. [attr] */
+a[target] {
+  color : skyblue;
+}
+
+/* 2. [attr=value] */
+input[type="submit"] {
+  background-color: gold;
+}
+
+/* 3. [attr^=value] */
+a[href^="http://"] {
+  color: red;
+}
+
+/* 4. [attr$=value] */
+a[href$=".com"] {
+  color: silver;
+}
+
+/* 5. [attr=value] */
+a[href*="example"] {
+  color: SIENNA;
+}
+
+
+/* Pseudo-Class Selector
+(가상 클래스 선택자) */
+
+/* 1. :first-child */
+li:first-child {
+  color : rosybrown;
+}
+
+.movie:first-child {
+  font-size: 32px;
+}
+
+/* 2. :last-child */
+span:last-child {
+  font-style: italic;
+}
+
+/* 3. :nth-child */
+li:nth-child(5) {
+  color : tomato;
+}
+
+/* first-child vs first-of-type */
+
+/* 4. :first-of-type */
+p:first-of-type {
+  color: aquamarine;
+}
+
+/* 5. :last-of-type */
+p:last-of-type {
+  color: palevioletred;
+}
+
+/* 6. :nth-of-type */
+p:nth-of-type(2n) {
+  color: palevioletred;
+}
