@@ -1,0 +1,68 @@
+/* 
+폰트/텍스트 관련 속성 
+*/
+
+/* font-size, font-style, font-weight */
+p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2.0;
+}
+
+/* font-family, line-height */
+/* .text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+/* font(shorthand) */
+.text{
+  color : red;
+  font: italic 800 25px Georgia, 'Times New Roman', Times, serif;
+}
+
+/* letter-spacing, word-spacing */
+.spacing{
+  letter-spacing: 5px;
+  word-spacing: -3px;
+}
+
+/* text-align */
+.align {
+  text-align: center;
+}
+
+/* text-indent */
+.ph1{
+  text-indent: 20px;
+}
+
+.container {
+  text-indent: 50px;
+}
+
+/* text-decoration */
+span {
+  font-size: 2em;
+  text-decoration: underline overline violet 2px dotted;
+}
+
+/* word-break */
+.a, .가 {
+ width: 150px;
+ background-color: rgb(93, 209, 209);
+}
+
+p[lang="en"] {
+  word-break: break-all;
+}
+
+p[lang="ko"] {
+  word-break: keep-all;
+}
+
+/* text-transform */
+.container p:last-of-type {
+  color:tomato;
+  text-transform: lowercase;
+}
