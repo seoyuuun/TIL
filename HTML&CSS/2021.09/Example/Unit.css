@@ -1,0 +1,42 @@
+/* 
+단위와 값 
+*/
+
+/* 상대길이 - em, rem */
+
+body {
+  margin :0;
+}
+.parent {
+  background-color : blue;
+  /* font-size: 24px; */
+  width : 50%;
+  height: 50vmin;
+}
+
+.child {
+  background-color : indianred;
+  /* font-size: 1.5em; */
+  width: 50%;
+  height : 50%;
+}
+
+/* 
+length
+
+1. 상대길이 
+ a. 글꼴 상대길이 - em, rem..
+ b. 뷰포트 백분율길이 - vw, vh..
+
+2. 절대길이 - px..  */
+
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: coral;
+  width: calc(100%-50px);
+  height: 200px;
+}
