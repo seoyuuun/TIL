@@ -1,0 +1,60 @@
+/* 
+레이아웃
+  (Layout)
+ */
+
+/* display - inline, block, inline-block */
+
+/*
+
+inline 요소 : ex) span..
+  - 영역의 크기가 내부 콘텐츠 크기로 정해진다.
+  - width와 height 지정 불가능
+  - margin, padding의 top/bottom 지정 불가능
+  - 여러 요소가 가로로 배치 가능
+
+block 요소 : ex) div, p..
+  - 영역의 크기르 width, height 지정 가능
+  - width를 지정하지 않으면 가로 전체를 차지한다.
+  - 여러 요소가 세로 배치가 된다.
+
+inline-block 요소 : ex) input..
+  - 영역의 크기를 width, height 지정 가능
+  - 여러 요소가 가로로 배치 가능
+
+*/
+
+span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: seagreen;
+}
+
+div {
+  height: 200px;
+  border: solid;
+}
+
+.box1 {
+  background-color: orange;
+}
+
+.box2 {
+  display: none;
+  visibility: hidden;
+  background-color: lightgreen;
+}
+
+.box3 {
+  background-color: lightskyblue;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  border: 3px solid lightskyblue;
+  margin: 10px;
+  float: right;
+}
