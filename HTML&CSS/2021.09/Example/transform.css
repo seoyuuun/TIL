@@ -1,0 +1,15 @@
+/* 
+Transform
+  (변형) */
+
+#disney {
+  width: 200px;
+  
+  /* transform: scale(0.5); */
+  /* transform: rotate(45deg); */
+  /* transform: translate(50%, 50%); */
+  /* transform: skew(90deg); */
+
+  transform: scale(2) rotate(45deg);
+  transform-origin: 50px 100px;
+}
