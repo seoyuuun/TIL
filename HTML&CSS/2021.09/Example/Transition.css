@@ -1,0 +1,26 @@
+/* 
+Transition
+  (전환) */
+
+/* transition-property, transition-duration */
+
+
+.box {
+  width: 200px;
+  height:200px;
+  border: 10px solid seagreen;
+  background-color: wheat;
+  border-radius: 20px;
+
+  /* transition-property: height;
+  transition-duration: 0.8s;
+  transition-delay: 0.5s;
+  transition-timing-function: linear; */
+  
+  transition : all 0.8s linear;
+  transform-origin: bottom;
+}
+
+.box:hover {
+  transform: rotate(360deg);
+}
