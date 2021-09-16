@@ -109,7 +109,7 @@ meter 태그는 특정 범위 내에서의 스칼라 값, 또는 백분율 값�
 ```
 
 ```js
-const clickmotion = document.getElementsByClassName("clickmotion");
+let clickmotion = document.getElementsByClassName("clickmotion");
 
 function handleClick(event) {
   console.log(event.target);
@@ -118,7 +118,7 @@ function handleClick(event) {
   if (event.target.classList[1] === "clicked") {
     event.target.classList.remove("clicked");
   } else {
-    for (var i = 0; i < clickmotion.length; i++) {
+    for (let i = 0; i < clickmotion.length; i++) {
       clickmotion[i].classList.remove("clicked");
     }
     event.target.classList.add("clicked");
@@ -126,7 +126,7 @@ function handleClick(event) {
 }
 
 function init() {
-  for (var i = 0; i < clickmotion.length; i++) {
+  for (let i = 0; i < clickmotion.length; i++) {
     clickmotion[i].addEventListener("click", handleClick);
   }
 }
