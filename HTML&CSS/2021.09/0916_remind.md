@@ -73,7 +73,7 @@ meter 태그는 특정 범위 내에서의 스칼라 값, 또는 백분율 값�
    `.my-bg:active { background-color : red; }`
    <br/>
 
-3. 정석 css+js
+3. 내가 생각하는 문제의 정석 html+css+js
 
 ```html
 <!DOCTYPE html>
