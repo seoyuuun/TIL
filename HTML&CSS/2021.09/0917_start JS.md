@@ -36,6 +36,6 @@ part 2
 console.log를 통해 console에서 결과를 기록해 코드가 의도대로 정상적으로 출력은 할 수 있으나 결과를 원하는대로 제공받을 수 없다
 
 
-[HTML](https://github.com/seoyuuun/Normad-Coding/blob/main/index.html).
-[JS](https://github.com/seoyuuun/Normad-Coding/blob/main/app.js).
-[JS](https://github.com/seoyuuun/Normad-Coding/blob/main/app2.js).
+[오늘의 TIL.HTML](https://github.com/seoyuuun/Normad-Coding/blob/main/index.html).<br/>
+[오늘의 TIL.JS](https://github.com/seoyuuun/Normad-Coding/blob/main/app.js).<br/>
+[오늘의 TIL.JS](https://github.com/seoyuuun/Normad-Coding/blob/main/app2.js).<br/>
