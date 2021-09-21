@@ -24,15 +24,15 @@
   `git config --list`
 
 
-#### Githu 명령어 모음
+### Githu 명령어 모음
 
-##### 초기화
+#### 초기화
 `git init`  추가할 파일 더하기
 
 `git add .`
 .(점) 은 모든 파일이라는 뜻으로, 모든 파일이 아닌 선택적으로 올리고 싶으면 add뒤에 파일 이름 붙여주면 된다 (예, git add index.html)
 
-##### 상태 확인 (선택 가능)
+#### 상태 확인 (선택 가능)
 
 `git status` 히스토리 만들기
 
@@ -40,7 +40,7 @@
 -m 은 메세지의 준말.
 뒤에 “” 안에 주고싶은 히스토리 이름을 주면 된다. 후에 히스토리 내용을 보고 어떤 내용을 커밋했는지 파악 가능하도록 이름을 작성하는 것 권장
 
-##### Github repository, 나의 local project와 연결
+#### Github repository, 나의 local project와 연결
 
 `git remote add origin https://github.com/bitnaGithub/firstproject.git`
 이 명령어는 github에서 복붙
@@ -75,23 +75,25 @@ Github로 올리기
 
 `git clone '주소' '폴더이름'`
 - 주소는 깃허브에서 가지고 와야 한다.
+- 폴더 이름은 선택사항이므로 없어도 되는 항목.
+- 폴더 이름을 줄 경우, 그 폴더가 새로 생성이 되면서 그 안에 코드들이 다운로드
+- 폴더 이름을 안 줄 경우엔, 깃허브 프로젝트 이름으로 폴더가 자동으로 생성되고 그안에 코드들이 다운로드
 
-폴더이름은 선택사항이므로 없어도 되는 항목.
-폴더이름을 줄 경우, 그 폴더가 새로 생성이 되면서 그 안에 코드들이 다운로드가 되고, 폴더이름을 안줄경우엔 깃허브 프로젝트 이름으로 폴더가 자동으로 생기고 그안에 코드들이 다운로드된다.
-Github에서 내 브렌치(branch)만들기
+##### Github에서 내 branch만들기
 
-git checkout -b 브렌치이름
-내 브렌치에 소스코드 업데이트하기
-
+`git checkout -b 'branch 이름'`
+내 branch에 소스코드 업데이트하기
+```
 git add .
 git commit -m "first commit"
 git push origin 브렌치이름
+```
 마스터 브렌치에 소스 가져오기(pull)
 
-git pull origin master
-pull을 하기전에는 기존에 소스코드들을 commit을 먼저 해놔야 한다 (2탄 강의참조)
+`git pull origin master`
+pull을 하기전에는 기존에 소스코드들을 commit을 먼저 해놔야 한다.
 
-브렌치끼리 이동하는 법
+##### branch끼리 이동하는 법
 
-git checkout 브렌치이름
-강의에서 소개하진 않았지만 내가 내 브렌치에서 마스터 브렌치로 이동을 하고 싶거나 다른 브렌치로 이동하고싶으면 해당 명령어를 쓰면 된다
+`git checkout' branch 이름'`
+내 branch에서 master branch로 이동을 하고 싶거나 다른 branch로 이동하고 싶으면 해당 명령어를 쓰면 된다
