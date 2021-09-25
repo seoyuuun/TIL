@@ -1,0 +1,472 @@
+1번
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *,*::before,*::after {
+      box-sizing: border-box;
+    }
+    
+    html,body,div,section,h1,h2,h3,h4,ul,li {
+      padding: 0;
+      margin: 0;
+    }
+  
+    ul,li {
+      list-style: none;
+    }
+  
+    .clear_fix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+    .header {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 150px;
+      line-height: 150px;
+    }
+  
+    .header .inner_box {
+      background-color: #000000;
+    }
+  
+    .header h1 {
+      color: #ffffff;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    section h2 {
+      margin-bottom: 20px;
+    }
+  
+    .inner_box {
+      width: 1200px;
+      margin: 0 auto;
+      height: inherit;
+    }
+  
+    .visual {
+      height: 600px;
+      background-color: aqua;
+      line-height: 600px;
+    }
+  
+    .visual .inner_box {
+      background-color: blue;
+    }
+  
+    .visual h2 {
+      font-size: 50px;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    .gallery,
+    .notice {
+      margin-top: 70px;
+    }
+  
+    .gallery h2 {
+      font-size: 25px;
+    }
+  
+    .gallery .img_box {
+      width: 100%;
+      height: 300px;
+      background-color: aqua;
+    }
+  
+    .notice ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .notice ul li {
+      width: 380px;
+    }
+  
+    .notice .notice_img {
+      background-color: #333;
+      width: 100%;
+      height: 200px;
+      color: #fff;
+      line-height: 200px;
+      text-align: center;
+      font-size: 40px;
+      border-radius: 20px 0 0 0;
+    }
+  
+    .notice .notice_info {
+      border: 2px solid #333;
+      border-radius: 0 0 20px 0;
+      padding: 0 10px;
+      height: 136px;
+    }
+  
+    .notice .notice_info h4 {
+      margin-top: 15px;
+    }
+  
+    .notice .notice_info p {
+      font-size: 15px;
+      line-height: 1.5;
+      word-break: keep-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+      height: 4.5;
+    }
+  
+    .comNews {
+      margin-top: 70px;
+    }
+  
+  
+    .comNews .news {
+      float: left;
+      width: 570px;
+    }
+  
+    .comNews .news ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .comNews .news li {
+      line-height: 130px;
+      text-align: center;
+  
+      width: 270px;
+      height: 130px;
+      background-color: aqua;
+    }
+  
+    .comNews .community {
+      float: right;
+      width: 570px;
+    }
+  
+    .comNews .community .com_content {
+      background-color: aqua;
+      height: 130px;
+    }
+  
+    .footer {
+      margin-top: 100px;
+      height: 130px;
+      background-color: #666;
+      line-height: 130px;
+      text-align-last: center;
+      color: #ffffff;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- S : header.header -->
+  <header class="header">
+    <div class="inner_box">
+      <h1>header</h1>
+    </div>
+  </header>
+  <!-- E : header.header -->
+
+  <!-- S : div.wrap -->
+  <div class="wrap">
+
+    <!-- S : section.visual -->
+    <section class="visual">
+      <div class="inner_box">
+        <h2>visual</h2>
+      </div>
+    </section>
+    <!-- E : section.visual -->
+
+
+    <!-- S : section.gallery -->
+    <section class="gallery">
+      <div class="inner_box">
+        <h2>Gallery</h2>
+        <div class="img_box"></div>
+      </div>
+    </section>
+    <!-- E : section.gallery -->
+
+    <!-- S : section.notice -->
+    <section class="notice">
+      <div class="inner_box">
+        <h2>Notice</h2>
+        <ul>
+
+          <li>
+            <div class="notice_img">text</div>
+            <div class="notice_info">
+              <h4>여기는 제목입니다.</h4>
+              <p>3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다.
+                3줄이상 넘어가면 생략됩니다. </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="notice_img"></div>
+            <div class="notice_info">
+              <h4>여기는 제목입니다.</h4>
+              <p>3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. 3줄이상 넘어가면 생략됩니다. </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="notice_img"></div>
+            <div class="notice_info">
+              <h4>여기는 제목입니다.</h4>
+              <p>여기는 설명입니다. 3줄이상 넘어가면 생략됩니다.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <!-- E : section.notice -->
+
+
+    <!-- S : section.News -->
+    <section class="comNews">
+      <div class="inner_box clear_fix">
+
+        <div class="news">
+          <h2>News</h2>
+          <ul>
+            <li>News1</li>
+            <li>News2</li>
+          </ul>
+        </div>
+
+        <div class="community">
+          <h2>Community</h2>
+          <div class="com_content">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E : section.News -->
+
+
+
+
+  </div>
+  <!-- E : div.wrap -->
+
+  <footer class="footer">
+    <h1>Footer</h1>
+  </footer>
+
+
+</body>
+
+</html>
+
+------------------------------------
+
+2번
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="prac.css">
+  <title>Document</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 0 0 0 10px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 60px;
+  background-color: orange;
+  color: white;
+}
+
+.num {
+  position: absolute;
+  top: 10px;
+}
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box">
+      <div class="num">2</div>
+    </div>
+  </div>
+</body>
+</html>
+
+-------------------------------------------
+
+3번 js 안 먹힘
+
+// minitest.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="minitest_fromDing.css" />
+    <script src="minitest_selectbox.js"></script>
+    <title>minitest_fromDing2</title>
+  </head>
+  <body>
+    <div id="leftBox" class="select_box">
+      <select id="leftBox_opt" name="leftBox_opt" onchange="lefeValueChange(this)">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+      <div class='result'>A</div>
+    </div>
+    
+    <div id="rightBox" class="select_box">
+      <select id="rightBox_opt" name="rightBox_opt" onchange="rightValueChange(this)">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+      <div class='result'>A</div>
+    </div>
+  </body>
+</html>
+
+//minitest.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50px;
+}
+
+
+div.select_box {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 50px;
+  border: 1px solid rgb(69, 137, 255);
+  color: white;
+  margin-bottom: 100px;
+}
+
+#leftBox {
+  background-color: rgb(132, 230, 197);
+}
+
+#rightBox {
+  background-color: rgb(89, 133, 196);
+}
+
+
+div.select_box label {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+div.select_box select {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  opacity: 0;
+  position: absolute;
+  top: -30%;
+  left: -20%;
+  color: white;
+  background-color: rgba(152, 152, 152, 0.5);
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+div.select_box option {
+  width: 30px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.result {
+  text-align : center;
+  line-height : 180px;
+}
+
+//minitest.js
+function leftValueChange(e) {
+  // 선택된 데이터의 텍스트값 가져오기
+  const text = e.options[e.selectedIndex].text;
+  
+  document.getElementById('result').innerText
+    = text;
+}
+
+const selectEl=document.querySelectorAll("select");
+
+// select 박스의 이전 선택지 인덱스 값을 담을 변수들, 초기값으로 시작하는 인덱스 값을 넣어줌
+let prevLeftValue = 0;
+let prevRightValue = 0;
+
+selectEl.forEach((item,index) => {
+  item.addEventListener("change",function(e) {
+    const leftValue = selectEl[selectEl.lenght-2]; // 첫번째 셀렉트의 선택된 값
+    const rightValue = selectEl[selectEl.length-1]; // 두번째 셀렉트의 선택된 값
+
+    if(leftValue.value === rightValue.value) {
+      // 중복 선택이 발생하는 경우
+      if (e.target.className === leftValue.className) {
+        // 첫번째 셀렉트 값이 바뀌없을 때 중복이 발생한 경우
+        rightValue.options[prevLeftValue].selected=true;
+      } else {
+        // 두번째 셀렉트 값이 바뀌었을 때 중복이 발생할 경우
+        leftValue.options[prevRightValue].selected = true;
+      }
+    } else {
+      // console.log("중복이 일어나지 않았을 때 코드");
+    }
+    // change 이벤트 실행 후 현재 인덱스 값을 이전 선택지 인덱스에 담아줌
+    prevLeftValue = leftValue.selectedIndex;
+    prevRightValue = rightValue.selectedIndex;
+  })
+})
